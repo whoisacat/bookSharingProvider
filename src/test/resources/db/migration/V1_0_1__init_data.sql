@@ -1,3 +1,4 @@
+select 'insert data';
 INSERT INTO author (id,title) values (1,'Сунь-Цзы');
 INSERT INTO author (id,title) values (2,'Кент Бек');
 INSERT INTO author (id,title) values (3,'Роберт Мартин');

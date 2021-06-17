@@ -1,3 +1,5 @@
+select 'insert data';
+
 INSERT INTO author (id,title) VALUES (1,'Сунь-Цзы');
 INSERT INTO author (id,title) VALUES (2,'Кент Бек');
 INSERT INTO author (id,title) VALUES (3,'Роберт Мартин');
@@ -10,9 +12,9 @@ INSERT INTO genre (id,title) VALUES (2,'Историческая художка'
 ALTER SEQUENCE genre_seq RESTART WITH 3;
 
 INSERT INTO who_user (id,email,password,first_name,last_name)
-    VALUES (1,'who@whoisacat.com','$2a$13$8c/moMd0sMVWPGKYe6660eQzy0ksOLtejtXIyiDJ89bknFvmAabAK','Антон','Цыпляшов');--'pass'
+VALUES (1,'who@whoisacat.com','$2a$13$8c/moMd0sMVWPGKYe6660eQzy0ksOLtejtXIyiDJ89bknFvmAabAK','Антон','Цыпляшов');--'pass'
 INSERT INTO who_user (id,email,password,first_name,last_name)
-    VALUES (2,'another0ne@whoisacat.com','$2a$13$pxJTRCJs/LXi1E8YmMOiNu5P/2Wyz/1ohiyI6BPAJj9qODxjD1Z.m','Гогорий','Иванов');--anotherPass
+VALUES (2,'another0ne@whoisacat.com','$2a$13$pxJTRCJs/LXi1E8YmMOiNu5P/2Wyz/1ohiyI6BPAJj9qODxjD1Z.m','Гогорий','Иванов');--anotherPass
 ALTER SEQUENCE user_seq RESTART WITH 3;
 
 INSERT INTO book (id,title,author_id,genre_id,who_user_id) VALUES (1,'Исскуство войны',1,2,1);

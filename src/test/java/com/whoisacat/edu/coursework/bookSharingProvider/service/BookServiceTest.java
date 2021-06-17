@@ -1,6 +1,7 @@
 package com.whoisacat.edu.coursework.bookSharingProvider.service;
 
 import com.google.common.collect.Lists;
+import com.whoisacat.edu.coursework.bookSharingProvider.domain.User;
 import com.whoisacat.edu.coursework.bookSharingProvider.repository.BookRepository;
 import com.whoisacat.edu.coursework.bookSharingProvider.domain.Author;
 import com.whoisacat.edu.coursework.bookSharingProvider.domain.Book;
@@ -87,6 +88,7 @@ class BookServiceTest {
                 .thenReturn(Lists.newArrayList());
         when(repository.save(any(Book.class))).thenReturn(BOOK_ODIN);
         when(repository.getById(1L)).thenReturn(BOOK_ODIN);
+        when(userService.getCurrentUser()).thenReturn(new User());
         Book book = service.addBook(BOOK_ODIN.getTitle(),AUTHOR_STRING,GENRE_STRING);
         assertThat(book.getTitle())
                 .isEqualTo(BOOK_ODIN.getTitle());

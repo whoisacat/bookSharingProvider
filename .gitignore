@@ -7,3 +7,14 @@
 /.idea/vcs.xml
 /book-sharing-provider.iml
 /.idea/workspace.xml
+/book-sharing-provider.log
+/book-sharing-provider.log.*.gz
+/target/
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

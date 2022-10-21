@@ -10,7 +10,7 @@ RUN git clone https://github.com/whoisacat/bookSharingProvider.git
 
 WORKDIR bookSharingProvider
 # если развернуть надо из ветки, то надо перейти на ветку (раскомментировать и написать нужную ветку)
-#RUN git checkout some_branch
+#RUN git checkout deploy_issues_1
 RUN mvn dependency:resolve
 RUN mvn install -DskipTests
 
